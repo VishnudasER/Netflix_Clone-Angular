@@ -1,0 +1,74 @@
+
+
+<app-header [userImage]="profileImg"></app-header>
+<!-- component -->
+
+<!-- banner component -->
+
+<app-banner [bannerTitle]="(bannerDetails | async).original_title" [bannerOverview]="(bannerDetails | async).overview" [key]="bannerVideo"></app-banner>
+
+
+<app-movie-carousal [videoContent]="movies" [title]="'Movies'"></app-movie-carousal>
+<app-movie-carousal [videoContent]="tvshows" [title]="'Trending Tv shows'"></app-movie-carousal>
+<app-movie-carousal [videoContent]="ratedmovies" [title]="'Top Rated'"></app-movie-carousal>
+<!-- <app-movie-carousal [videoContent]="nowPlaying" [title]="'Now Playing Movies'"></app-movie-carousal>
+<app-movie-carousal [videoContent]="popularMovies" [title]="'Popular Movies'"></app-movie-carousal>
+<app-movie-carousal [videoContent]="upcomingmovies" [title]="'Upcoming Movies'"></app-movie-carousal>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="flex items-center h-screen w-full justify-center">
+
+    <div class="max-w-xs">
+        <div class="bg-white shadow-xl rounded-lg py-3">
+            <div class="photo-wrapper p-2">
+                <img class="w-32 h-32 rounded-full mx-auto" [src]="profileImg" alt="John Doe">
+            </div>
+            <div class="p-2">
+                <h3 class="text-center text-xl text-gray-900 font-medium leading-8">{{ name }}</h3>
+                <div class="text-center text-gray-400 text-xs font-semibold">
+                    <p>Web Developer</p>
+                </div>
+                <table class="text-xs my-3">
+                    <tbody><tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Address</td>
+                        <td class="px-2 py-2">Chatakpur-3, Dhangadhi Kailali</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Phone</td>
+                        <td class="px-2 py-2">+977 9955221114</td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 py-2 text-gray-500 font-semibold">Email</td>
+                        <td class="px-2 py-2">{{ email }}</td>
+                    </tr>
+                </tbody></table>
+    
+                <div class="text-center my-3">
+                    <a (click)="signOut()" class="text-xs cursor-pointer text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium">Sign Out</a>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    </div> -->
